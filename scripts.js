@@ -2,6 +2,12 @@
 const USD = 4.87
 const EUR = 5.32
 const GBP = 6.08
+const JPY = 0.0398
+const ARS = 189.2430
+const CHF = 6.46 
+const WON = 258.2850
+
+
 
 // Obtendo os elementos do formulário.
 const form = document.querySelector("form")
@@ -31,13 +37,25 @@ form.onsubmit = (event) => {
     case "GBP":
       convertCurrency(amount.value, GBP, "£")
       break
+      case "JPY":
+      convertCurrency(amount.value, JPY, "¥")
+      break
+      case "ARS":
+      convertCurrency(amount.value, ARS, "$")
+      break
+      case "CHF":
+      convertCurrency(amount.value, CHF, "SFr")
+      break
+      case "WON":
+      convertCurrency(amount.value, WON, "₩")
+      break
   }
 }
 
 // Função para converter a moeda.
 function convertCurrency(amount, price, symbol){
   try {
-    // Exibindo a cotação da moeda selecionada.
+// Exibindo a cotação da moeda selecionada.
     description.textContent = `${symbol} 1 = ${formatCurrencyBRL(price)}`
 
 //Calcula o total

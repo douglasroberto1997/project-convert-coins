@@ -41,7 +41,7 @@ function convertCurrency(amount, price, symbol){
     description.textContent = `${symbol} 1 = ${formatCurrencyBRL(price)}`
 
 //Calcula o total
-    let total = amount * price + "a"
+    let total = amount * price 
 
 //Verificando se o resultado não é um numero
     if(isNaN(total)){

@@ -2,7 +2,7 @@
 const USD = 4.87
 const EUR = 5.32
 const GBP = 6.08
-const JPY = 0.0398
+const JPY = 26.3502
 const ARS = 189.2430
 const CHF = 6.46 
 const WON = 258.2850
@@ -37,9 +37,9 @@ form.onsubmit = (event) => {
     case "GBP":
       convertCurrency(amount.value, GBP, "£")
       break
-      case "JPY":
+        case "JPY":
       convertCurrency(amount.value, JPY, "¥")
-      break
+        break
       case "ARS":
       convertCurrency(amount.value, ARS, "$")
       break
